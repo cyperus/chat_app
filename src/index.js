@@ -8,7 +8,6 @@ const io = socketio(server);
 const port = process.env.PORT || 3000;
 const geolocation = require('geolocation');
 const Filter = require('bad-words');
-// Serve up the public directory
 const publicDirectoryPath = path.join(__dirname, '../public');
 console.log('======publicDirectoryPath=====', publicDirectoryPath);
 const { generateMessage, generateLocationMessage } = require('./utils/message');
